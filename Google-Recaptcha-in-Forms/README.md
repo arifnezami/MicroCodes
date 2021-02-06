@@ -1,5 +1,13 @@
 # Google Recaptcha in Forms
 
+## HTML Header
+
+Add the following line in the header
+
+```html
+ <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+ ```
+
 ## Form
 
 In the form, where you have form fields, add this line to make the Recaptcha check box appear
