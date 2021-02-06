@@ -12,6 +12,7 @@ Note: Your Site key is the key generated from https://www.google.com/recaptcha/a
 ## Checking Recaptcha After Submission
 
 Add the following codes when checking $_POST inputs after use pressed the Submit button.
+```php
 
 if(isset($_POST['g-recaptcha-response'])){
           $captcha=$_POST['g-recaptcha-response'];
@@ -32,6 +33,6 @@ if(isset($_POST['g-recaptcha-response'])){
         } else {
             // what to do if the recpathcha NOT matched
         }
-
+```
 
 Note: YOUR_SECRET_KET is the key you got from https://www.google.com/recaptcha/about/
