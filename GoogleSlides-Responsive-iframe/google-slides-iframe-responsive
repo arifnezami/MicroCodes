@@ -1,0 +1,20 @@
+<div class="responsive-google-slides">
+  <iframe src="https://docs.google.com/presentation/d/e/xxxx/embed"></iframe>
+</div>
+
+<style>
+  .responsive-google-slides {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  .responsive-google-slides iframe {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+</style>
