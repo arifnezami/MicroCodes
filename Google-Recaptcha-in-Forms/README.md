@@ -4,8 +4,9 @@
 
 In the form, where you have form fields, add this line to make the Recaptcha check box appear
 
+```html
 <div class="g-recaptcha" data-sitekey="Your_Site_Key"></div>
-
+```
 
 Note: Your Site key is the key generated from https://www.google.com/recaptcha/about/
 
