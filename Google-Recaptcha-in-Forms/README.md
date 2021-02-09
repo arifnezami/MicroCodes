@@ -27,7 +27,9 @@ if(isset($_POST['g-recaptcha-response'])){
           $captcha=$_POST['g-recaptcha-response'];
         }
         if(!$captcha){
-          echo '<h2>Please check the the captcha form.</h2>';
+        $redirect_link = ''; // ADD REDIRECT LINK HERE
+          echo '<html><script>alert("Please check the the captcha form.")</script></html>';
+           echo '<meta http-equiv="refresh" content="0;url='.$redirect_link.'" />';
           exit;
         }
         $secretKey = "YOUR_SECRET_KET"; //Add your secret key here.
@@ -40,7 +42,10 @@ if(isset($_POST['g-recaptcha-response'])){
         if($responseKeys["success"]) {
                  // what to do if the recpathcha matched
         } else {
-            // what to do if the recpathcha NOT matched
+           $redirect_link = ''; // ADD REDIRECT LINK HERE
+          echo '<html><script>alert("Wrong captcha. Please check the the captcha form properly.")</script></html>';
+           echo '<meta http-equiv="refresh" content="0;url='.$redirect_link.'" />';
+          exit;
         }
 ```
 
